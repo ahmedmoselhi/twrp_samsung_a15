@@ -41,7 +41,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_KEEP_FORCED_ENCRYPTION=1
 	export OF_PATCH_AVB20=1
 	export OF_FLASHLIGHT_ENABLE=1
-	export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"	
+	export OF_FL_PATH1="/system/flashlight"
+	export OF_FL_PATH2=""	
 	export OF_SCREEN_H=2280
 	export OF_STATUS_H=80
 	export OF_STATUS_INDENT_LEFT=48
