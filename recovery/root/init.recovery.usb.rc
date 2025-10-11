@@ -1,6 +1,10 @@
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
-
+	
+on boot
+# Start USB OTG switcher
+    start usb_otg_switcher
+	
 on fs
     mount configfs none /config
     mkdir /config/usb_gadget/g1 0770 shell shell
@@ -68,3 +72,9 @@ on property:sys.usb.config=fastboot && property:sys.usb.ffs.ready=1
     symlink /config/usb_gadget/g1/functions/ffs.fastboot /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     setprop sys.usb.state ${sys.usb.config}
+	
+service usb_otg_switcher /vendor/bin/usb_otg_switcher
+    class main
+    user root
+    group root
+    seclabel u:r:recovery:s0	
