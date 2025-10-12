@@ -2,14 +2,12 @@ LOCAL_PATH := device/samsung/a15
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Health HAL
+# Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service \
-    libhealthd.$(PRODUCT_PLATFORM) \
     android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
-
+    fastbootd \
+	android.hardware.health@2.0-service
+	
 # EROFS Tools
 PRODUCT_HOST_PACKAGES_ENG += \
     liberofs \

@@ -1,9 +1,6 @@
-# Device
-ro.display.series=Samsung Galaxy A15
-
-# Platform
+ro.display.series=Galaxy A15 4G
 ro.product.board=mt6789
 ro.board.platform=mt6789
-
-# Dynamic partitions
+vendor.usb.use_ffs_mtp=1
+sys.usb.controller=11201000.usb0
 ro.boot.dynamic_partitions=true
