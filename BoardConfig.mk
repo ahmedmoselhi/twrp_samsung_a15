@@ -130,7 +130,7 @@ TW_DEVICE_VERSION := GalaxyA15
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
-TW_MTP_DEVICE := "Galaxy A15"
+TW_MTP_DEVICE := "Galaxy A15 4G"
 TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_FRAMERATE := 75
 TW_BACKUP_EXCLUSIONS := /data/fonts
@@ -141,7 +141,7 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # Samsung things
-TW_USE_SAMSUNG_HAPTICS := true
+TW_USE_SAMSUNG_JDM_HAPTICS := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_NO_REBOOT_BOOTLOADER := true
 TARGET_NO_BOOTLOADER := true
@@ -157,12 +157,14 @@ TW_INCLUDE_FASTBOOTD := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
-TW_EXCLUDE_APEX := false
+TW_EXCLUDE_APEX := true
 
 # UI
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CPU_POS := 50
-TW_CUSTOM_CLOCK_POS := 300
-TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery/capacity"
-TW_Y_OFFSET := 80
-TW_H_OFFSET := -80
+TW_CUSTOM_CLOCK_POS := "464"
+TW_CUSTOM_BATTERY_POS := "820"
+TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-gauge/power_supply/battery/capacity"
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone41/temp
+TW_Y_OFFSET := 95
+TW_H_OFFSET := -84
