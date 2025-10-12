@@ -6,10 +6,13 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
-    libhealthd.$(PRODUCT_PLATFORM) \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+    libhealthd.$(PRODUCT_PLATFORM)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl-mock \
+    fastbootd
+	
 # EROFS Tools
 PRODUCT_HOST_PACKAGES_ENG += \
     liberofs \
