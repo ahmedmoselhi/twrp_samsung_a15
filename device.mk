@@ -5,8 +5,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    fastbootd \
-	android.hardware.health@2.0-service
+    fastbootd
 	
 # EROFS Tools
 PRODUCT_HOST_PACKAGES_ENG += \

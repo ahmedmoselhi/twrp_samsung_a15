@@ -61,7 +61,7 @@
 /lib/modules/sec_panel_notifier_v2.ko:
 /lib/modules/pinctrl-mtk-common-v2_debug.ko: /lib/modules/pinctrl-mtk-v2.ko
 /lib/modules/mtk_panel_ext.ko:
-/lib/modules/extcon-mtk-usb.ko: /lib/modules/tcpc_class.ko /lib/modules/pd_dbg_info.ko
+/lib/modules/extcon-mtk-usb.ko: /lib/modules/tcpc_class.ko /lib/modules/pd_dbg_info.ko /lib/modules/pdic_notifier_module.ko /lib/modules/sec_switch_class.ko /lib/modules/usb_notify_layer.ko /lib/modules/sec_ext.ko /lib/modules/bootprof.ko /lib/modules/sec_debug.ko
 /lib/modules/meta.ko: /lib/modules/bootprof.ko
 /lib/modules/mmprofile.ko: /lib/modules/aee_aed.ko /lib/modules/mrdump.ko /lib/modules/sec_extra_info.ko /lib/modules/sec_ext.ko /lib/modules/bootprof.ko /lib/modules/sec_debug.ko
 /lib/modules/vbus_notifier.ko:
